@@ -1,7 +1,7 @@
 {
-	"name": "esteiradireita",
+	"name": "iconemaquina",
 	"plugin-id": "Sprite",
-	"sid": 178434230716784,
+	"sid": 278191410433850,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,32 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 130,
-						"height": 61,
-						"originX": 0.2846153846153846,
-						"originY": 0.6557377049180327,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5142133,
-						"collisionPoly": {
-							"points": [
-								0.007692307692307693,
-								0.10655737704918034,
-								0.9923076923076923,
-								0.10655737704918034,
-								1,
-								0.8114754098360654,
-								0.023076923076923078,
-								0.7704918032786884
-							]
-						},
+						"imageSpriteId": 2061688,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 370266171332538,
+				"sid": 238796387197715,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
