@@ -99,47 +99,6 @@
 		],
 		"subfolders": [
 			{
-				"items": [],
-				"subfolders": [
-					{
-						"items": [
-							"Mosaico10",
-							"Mosaico4"
-						],
-						"subfolders": [],
-						"name": "fundo"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"Mosaico23",
-									"Mosaico24",
-									"Mosaico25",
-									"Mosaico26"
-								],
-								"subfolders": [],
-								"name": "detalhes areia"
-							}
-						],
-						"name": "areia"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "detalhes grama"
-							}
-						],
-						"name": "grama"
-					}
-				],
-				"name": "tiles de fundo"
-			},
-			{
 				"items": [
 					"sombraesteiraLesquerdacima",
 					"sombraesteiraLesquerdabaixo2",

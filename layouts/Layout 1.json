@@ -5,56 +5,7 @@
 			"name": "Camada 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Mosaico4",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 40,
-							"height": 22,
-							"max-width": 91,
-							"max-height": 49,
-							"data": "23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,23x1,26x0,22x1,27x0,23x1,26x0,23x1,26x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,23x1,26x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,27x0,22x1,2526x0"
-						},
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 4,
-						"y": 0,
-						"width": 2560,
-						"height": 1440,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 970669445640734,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
