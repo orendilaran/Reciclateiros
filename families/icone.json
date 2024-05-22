@@ -1,0 +1,21 @@
+{
+	"name": "icone",
+	"plugin-id": "Sprite",
+	"sid": 567870850424675,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Atrelar",
+			"sid": 373407334049039
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"iconeBorracha",
+		"iconeConsrução",
+		"IconeGuia",
+		"IconeCancel",
+		"Cancel"
+	]
+}

@@ -8,6 +8,20 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -24,6 +38,13 @@
 			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Atrelar",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -55,7 +76,23 @@
 			"Sprite",
 			"Sprite3",
 			"Texto",
-			"Texto2"
+			"Texto2",
+			"maquina1_frente",
+			"Esteiras",
+			"Mouse",
+			"Teclado",
+			"Guia",
+			"iconeconstrução",
+			"iconeConsrução",
+			"Sprite5",
+			"IconeCancel",
+			"IconeGuia",
+			"iconeBorracha",
+			"Selecionado",
+			"iconeEsteira",
+			"iconemaquina",
+			"Cancel",
+			"Seta"
 		],
 		"subfolders": [
 			{
@@ -142,16 +179,8 @@
 			},
 			{
 				"items": [
-					"esteiradireita",
 					"maquina",
 					"maquinadelado",
-					"esteirabaixo",
-					"esteiraesquera",
-					"esteiraLesquerdacima",
-					"esteiraLdireitacima",
-					"esteiraLdireitabaixo",
-					"esteiraCima",
-					"esteiraLesquerdabaixo",
 					"Sprite2"
 				],
 				"subfolders": [],
@@ -162,7 +191,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"icone"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -333,7 +364,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 1280,
-	"viewportHeight": 720,
+	"viewportWidth": 1980,
+	"viewportHeight": 1080,
 	"firstLayout": null
 }

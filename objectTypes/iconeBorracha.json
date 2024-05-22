@@ -1,7 +1,7 @@
 {
-	"name": "esteirabaixo",
+	"name": "iconeBorracha",
 	"plugin-id": "Sprite",
-	"sid": 473336264153160,
+	"sid": 222500271900356,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 50,
+						"width": 128,
 						"height": 128,
-						"originX": 0.2,
-						"originY": 0.546875,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 515540,
+						"imageSpriteId": 788468,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 255666759552086,
-				"name": "Default",
+				"sid": 877016029923831,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

@@ -2,6 +2,26 @@
 	"name": "Folha de eventos 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Seleção",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 261680555014211
+		},
+		{
+			"eventType": "variable",
+			"name": "direçãoesteira",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 541193463667949
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "sombras",
@@ -118,17 +138,6 @@
 					],
 					"actions": [
 						{
-							"id": "spawn-another-object",
-							"objectClass": "esteirabaixo",
-							"sid": 218855264946179,
-							"parameters": {
-								"object": "sombraesteirabaixo2",
-								"layer": "\"sombras\"",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "sombraesteirabaixo2",
 							"sid": 304211125173950,
@@ -150,17 +159,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "esteiraCima",
-							"sid": 473983911675699,
-							"parameters": {
-								"object": "sombraesteirabaixo2",
-								"layer": "\"sombras\"",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "sombraesteirabaixo2",
@@ -184,17 +182,6 @@
 					],
 					"actions": [
 						{
-							"id": "spawn-another-object",
-							"objectClass": "esteiradireita",
-							"sid": 443937343889145,
-							"parameters": {
-								"object": "sombraesteiradireita2",
-								"layer": "\"sombras\"",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "sombraesteiradireita2",
 							"sid": 404205400011414,
@@ -216,17 +203,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "esteiraesquera",
-							"sid": 954630987104636,
-							"parameters": {
-								"object": "sombraesteiradireita2",
-								"layer": "\"sombras\"",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
 						{
 							"id": "set-position",
 							"objectClass": "sombraesteiradireita2",
@@ -250,17 +226,6 @@
 					],
 					"actions": [
 						{
-							"id": "spawn-another-object",
-							"objectClass": "esteiraesquera",
-							"sid": 691474113419796,
-							"parameters": {
-								"object": "sombraesteiradireita2",
-								"layer": "\"sombras\"",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "sombraesteiradireita2",
 							"sid": 579530039072504,
@@ -274,6 +239,396 @@
 				}
 			],
 			"sid": 779444009273218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 199153930764324
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 237563803839366,
+					"parameters": {
+						"variable": "Seleção"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Guia",
+					"sid": 896351680595807,
+					"parameters": {
+						"x": "floor(Mouse.X/128)*128+64",
+						"y": "floor(Mouse.Y/128)*128+64"
+					}
+				}
+			],
+			"sid": 680105799244935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 908950606145801,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "icone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "icone",
+					"sid": 905089528338453,
+					"behaviorType": "Atrelar",
+					"parameters": {
+						"pin-to": "Guia",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 494239263099051,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 113998673111959,
+							"parameters": {
+								"object": "Sprite5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Selecionado",
+							"sid": 412407809432570,
+							"parameters": {
+								"x": "icone.X",
+								"y": "icone.Y"
+							}
+						}
+					],
+					"sid": 419133834446296
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 689537887355725,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 438693710790638,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "unpin",
+					"objectClass": "icone",
+					"sid": 188940418502149,
+					"behaviorType": "Atrelar"
+				},
+				{
+					"id": "set-position",
+					"objectClass": "iconeBorracha",
+					"sid": 645129838318384,
+					"parameters": {
+						"x": "832",
+						"y": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "iconeConsrução",
+					"sid": 960834801098388,
+					"parameters": {
+						"x": "64",
+						"y": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "IconeGuia",
+					"sid": 958176482474169,
+					"parameters": {
+						"x": "576",
+						"y": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "IconeCancel",
+					"sid": 695690343170340,
+					"parameters": {
+						"x": "320",
+						"y": "64"
+					}
+				}
+			],
+			"sid": 460640612306851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 596688284145848,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "iconeConsrução"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 793638471656773,
+					"parameters": {
+						"object": "Sprite5"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 934847913208510,
+					"parameters": {
+						"variable": "Seleção"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "iconeEsteira",
+					"sid": 870208438024658,
+					"parameters": {
+						"x": "floor(Mouse.X/128)*128-64",
+						"y": "floor(Mouse.Y/128)*128+64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Cancel",
+					"sid": 630319929030633,
+					"parameters": {
+						"x": "floor(Mouse.X/128)*128+64",
+						"y": "floor(Mouse.Y/128)*128-64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "iconemaquina",
+					"sid": 570536041717828,
+					"parameters": {
+						"x": "floor(Mouse.X/128)*128+192",
+						"y": "floor(Mouse.Y/128)*128+64"
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 287494707097051,
+					"parameters": {
+						"variable": "Seleção"
+					}
+				}
+			],
+			"sid": 584419569018516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 632141669990359,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 291989351265496,
+					"parameters": {
+						"variable": "Seleção"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 588477112023313,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 709130131074547,
+							"parameters": {
+								"object": "Cancel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "iconemaquina",
+							"sid": 680980916890435,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Cancel",
+							"sid": 598049209587768,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "iconeEsteira",
+							"sid": 656596731288250,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 502528451953204,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						}
+					],
+					"sid": 360479438087724
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 934024860026684,
+							"parameters": {
+								"object": "iconemaquina"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "iconeEsteira",
+							"sid": 251519224273464,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Cancel",
+							"sid": 614039808170998,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "iconemaquina",
+							"sid": 292278354043119,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 773900375514401,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "maquina1_frente",
+							"sid": 906303609766408,
+							"parameters": {
+								"x": "guia.X+128",
+								"y": "guia.Y"
+							}
+						}
+					],
+					"sid": 856703881583145
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 673076717504425,
+							"parameters": {
+								"object": "iconeEsteira"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 294079313663938,
+							"parameters": {
+								"variable": "direçãoesteira"
+							}
+						}
+					],
+					"sid": 873200740915764
+				}
+			]
 		}
 	],
 	"sid": 610382214252702
