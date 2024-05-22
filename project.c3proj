@@ -93,11 +93,77 @@
 			"iconemaquina",
 			"Cancel",
 			"Seta",
-			"Sprite6",
-			"Mosaico28",
-			"Sprite7"
+			"heroidanação",
+			"Seta2",
+			"Seta3",
+			"Seta4"
 		],
 		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Mosaico10",
+							"Mosaico4"
+						],
+						"subfolders": [],
+						"name": "fundo"
+					},
+					{
+						"items": [
+							"Mosaico",
+							"Mosaico2",
+							"Mosaico3",
+							"Mosaico5",
+							"Mosaico6",
+							"Mosaico7",
+							"Mosaico8",
+							"Mosaico9"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Mosaico23",
+									"Mosaico24",
+									"Mosaico25",
+									"Mosaico26",
+									"Mosaico27"
+								],
+								"subfolders": [],
+								"name": "detalhes areia"
+							}
+						],
+						"name": "areia"
+					},
+					{
+						"items": [
+							"Mosaico11",
+							"Mosaico12",
+							"Mosaico13",
+							"Mosaico14",
+							"Mosaico15",
+							"Mosaico16",
+							"Mosaico17",
+							"Mosaico18",
+							"Mosaico19"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Mosaico20",
+									"Mosaico21",
+									"Mosaico22"
+								],
+								"subfolders": [],
+								"name": "detalhes grama"
+							}
+						],
+						"name": "grama"
+					}
+				],
+				"name": "tiles de fundo"
+			},
 			{
 				"items": [
 					"sombraesteiraLesquerdacima",
