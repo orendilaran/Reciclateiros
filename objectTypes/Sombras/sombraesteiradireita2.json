@@ -1,0 +1,59 @@
+{
+	"name": "sombraesteiradireita2",
+	"plugin-id": "Sprite",
+	"sid": 482264691594474,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "DefinirCor"
+		},
+		{
+			"effectId": "overlay",
+			"name": "Sobreposição"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 130,
+						"height": 61,
+						"originX": 0.35384615384615387,
+						"originY": 0.5245901639344263,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2869908,
+						"collisionPoly": {
+							"points": [
+								0.007692307692307693,
+								0.10655737704918034,
+								0.9923076923076923,
+								0.10655737704918034,
+								1,
+								0.8114754098360654,
+								0.023076923076923078,
+								0.7704918032786884
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 121192311792216,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

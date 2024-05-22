@@ -1,0 +1,63 @@
+{
+	"name": "maquinadelado2",
+	"plugin-id": "Sprite",
+	"sid": 645724155855011,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "DefinirCor"
+		},
+		{
+			"effectId": "overlay",
+			"name": "Sobreposição"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 118,
+						"height": 128,
+						"originX": 0.3644067796610169,
+						"originY": 0.6640625,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5635213,
+						"collisionPoly": {
+							"points": [
+								0.1016949152542373,
+								0,
+								0.9067796610169492,
+								0,
+								0.9915254237288136,
+								0.0859375,
+								0.9830508474576272,
+								1,
+								0.01694915254237288,
+								1,
+								0.01694915254237288,
+								0.078125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 698748608818184,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

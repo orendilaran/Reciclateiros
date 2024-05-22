@@ -1,0 +1,280 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "sombras",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 282993699082305
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Sprite2",
+							"sid": 160518976320218,
+							"parameters": {
+								"object": "Sprite4",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Sprite4",
+							"sid": 251861529369850,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 857095898321323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 772300342544965
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "maquina",
+							"sid": 395182078238807,
+							"parameters": {
+								"object": "maquina2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "maquina2",
+							"sid": 787719450088002,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 873235025263850
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 885576050557956
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "maquinadelado",
+							"sid": 164322731226093,
+							"parameters": {
+								"object": "maquinadelado2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "maquinadelado2",
+							"sid": 205064173705452,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 358120556571380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 322827569697634
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "esteirabaixo",
+							"sid": 218855264946179,
+							"parameters": {
+								"object": "sombraesteirabaixo2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sombraesteirabaixo2",
+							"sid": 304211125173950,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 682849620541649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 390135830905296
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "esteiraCima",
+							"sid": 473983911675699,
+							"parameters": {
+								"object": "sombraesteirabaixo2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sombraesteirabaixo2",
+							"sid": 455743090915393,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 770926742814593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 952809195291341
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "esteiradireita",
+							"sid": 443937343889145,
+							"parameters": {
+								"object": "sombraesteiradireita2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sombraesteiradireita2",
+							"sid": 404205400011414,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 381537748549735
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 506001151424095
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "esteiraesquera",
+							"sid": 954630987104636,
+							"parameters": {
+								"object": "sombraesteiradireita2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sombraesteiradireita2",
+							"sid": 215060351402196,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 102447117478692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 594729393795966
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "esteiraesquera",
+							"sid": 691474113419796,
+							"parameters": {
+								"object": "sombraesteiradireita2",
+								"layer": "\"sombras\"",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "sombraesteiradireita2",
+							"sid": 579530039072504,
+							"parameters": {
+								"x": "Self.ImagePointX(1)",
+								"y": "Self.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 605790282513795
+				}
+			],
+			"sid": 779444009273218
+		}
+	],
+	"sid": 610382214252702
+}

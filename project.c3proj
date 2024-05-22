@@ -1,0 +1,339 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 38802,
+	"name": "XP1",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Mosaico",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "overlay",
+			"name": "Sobreposição",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Definir cor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tonalidade",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "4li2vtkhy5l",
+	"objectTypes": {
+		"items": [
+			"Sprite",
+			"Sprite3",
+			"Texto",
+			"Texto2"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Mosaico10",
+							"Mosaico4"
+						],
+						"subfolders": [],
+						"name": "fundo"
+					},
+					{
+						"items": [
+							"Mosaico",
+							"Mosaico2",
+							"Mosaico3",
+							"Mosaico5",
+							"Mosaico6",
+							"Mosaico7",
+							"Mosaico8",
+							"Mosaico9"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Mosaico23",
+									"Mosaico24",
+									"Mosaico25",
+									"Mosaico26",
+									"Mosaico27"
+								],
+								"subfolders": [],
+								"name": "detalhes areia"
+							}
+						],
+						"name": "areia"
+					},
+					{
+						"items": [
+							"Mosaico11",
+							"Mosaico12",
+							"Mosaico13",
+							"Mosaico14",
+							"Mosaico15",
+							"Mosaico16",
+							"Mosaico17",
+							"Mosaico18",
+							"Mosaico19"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Mosaico20",
+									"Mosaico21",
+									"Mosaico22"
+								],
+								"subfolders": [],
+								"name": "detalhes grama"
+							}
+						],
+						"name": "grama"
+					}
+				],
+				"name": "tiles de fundo"
+			},
+			{
+				"items": [
+					"sombraesteiraLesquerdacima",
+					"sombraesteiraLesquerdabaixo2",
+					"sombraesteiraLdireitacima2",
+					"sombraesteiraLdireitabaixo",
+					"sombraesteiraesquera2",
+					"sombraesteiradireita2",
+					"sombraesteiraCima2",
+					"sombraesteirabaixo2",
+					"Sprite4",
+					"maquina2",
+					"maquinadelado2"
+				],
+				"subfolders": [],
+				"name": "Sombras"
+			},
+			{
+				"items": [
+					"esteiradireita",
+					"maquina",
+					"maquinadelado",
+					"esteirabaixo",
+					"esteiraesquera",
+					"esteiraLesquerdacima",
+					"esteiraLdireitacima",
+					"esteiraLdireitabaixo",
+					"esteiraCima",
+					"esteiraLesquerdabaixo",
+					"Sprite2"
+				],
+				"subfolders": [],
+				"name": "maquinas"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Folha de eventos 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 335268868502601,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 711260982122783,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 540265845055122,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 993534636964883,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 368671372917069,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 878365631549035,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 174261321876267,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Linha do tempo 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": null
+}

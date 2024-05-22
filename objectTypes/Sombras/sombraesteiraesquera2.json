@@ -1,0 +1,50 @@
+{
+	"name": "sombraesteiraesquera2",
+	"plugin-id": "Sprite",
+	"sid": 282827723356796,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 130,
+						"height": 61,
+						"originX": 0.4230769230769231,
+						"originY": 0.5737704918032787,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3112038,
+						"collisionPoly": {
+							"points": [
+								0.007692307692307693,
+								0.16393442622950818,
+								0.9923076923076923,
+								0.09016393442622951,
+								0.9846153846153847,
+								0.8606557377049182,
+								0.007692307692307693,
+								0.8442622950819674
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 265319303921782,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
