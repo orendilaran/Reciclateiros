@@ -151,6 +151,20 @@
 				],
 				"subfolders": [],
 				"name": "maquinas"
+			},
+			{
+				"items": [
+					"arvoresclip",
+					"arvoresclip2",
+					"brush",
+					"deadtree",
+					"planta",
+					"arvoresclip3",
+					"pedras",
+					"pedras2"
+				],
+				"subfolders": [],
+				"name": "arvores e pedras"
 			}
 		]
 	},
