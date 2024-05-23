@@ -56,6 +56,20 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Movimento em grid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restrito ao layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "overlay",
 			"name": "Sobreposição",
@@ -103,7 +117,13 @@
 			"Sprite6",
 			"Mosaico28",
 			"Sprite7",
-			"PlanoDeFundoEmBlocos"
+			"PlanoDeFundoEmBlocos",
+			"Seta2",
+			"Seta3",
+			"Seta4",
+			"sacola_plastica",
+			"papel",
+			"Sprite8"
 		],
 		"subfolders": [
 			{
@@ -138,7 +158,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"icone"
+			"icone",
+			"recurso"
 		],
 		"subfolders": []
 	},

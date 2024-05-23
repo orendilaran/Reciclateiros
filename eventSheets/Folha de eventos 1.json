@@ -559,6 +559,15 @@
 					"actions": [
 						{
 							"id": "set-position",
+							"objectClass": "maquina1_frente",
+							"sid": 948358675768462,
+							"parameters": {
+								"x": "guia.X",
+								"y": "guia.Y"
+							}
+						},
+						{
+							"id": "set-position",
 							"objectClass": "iconeEsteira",
 							"sid": 251519224273464,
 							"parameters": {
@@ -591,15 +600,6 @@
 							"parameters": {
 								"variable": "Seleção"
 							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "maquina1_frente",
-							"sid": 906303609766408,
-							"parameters": {
-								"x": "guia.X+128",
-								"y": "guia.Y"
-							}
 						}
 					],
 					"sid": 856703881583145
@@ -618,15 +618,865 @@
 					],
 					"actions": [
 						{
+							"id": "set-position",
+							"objectClass": "iconemaquina",
+							"sid": 808508705156962,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Cancel",
+							"sid": 717751908393464,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "iconeEsteira",
+							"sid": 495214438618428,
+							"parameters": {
+								"x": "-900",
+								"y": "-900"
+							}
+						},
+						{
 							"id": "toggle-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 294079313663938,
 							"parameters": {
 								"variable": "direçãoesteira"
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 878022847343426,
+							"parameters": {
+								"object": "Seta",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 832825646646608,
+							"parameters": {
+								"object": "Seta2",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 697178108694754,
+							"parameters": {
+								"object": "Seta3",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 400931065318625,
+							"parameters": {
+								"object": "Seta4",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Seta",
+							"sid": 259559879089386,
+							"parameters": {
+								"x": "Guia.X",
+								"y": "Guia.Y-128"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Seta2",
+							"sid": 796742954420006,
+							"parameters": {
+								"x": "Guia.X+128",
+								"y": "Guia.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Seta3",
+							"sid": 979824420475935,
+							"parameters": {
+								"x": "Guia.X",
+								"y": "Guia.Y+128"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Seta4",
+							"sid": 454951235901280,
+							"parameters": {
+								"x": "Guia.X-128",
+								"y": "Guia.Y"
+							}
 						}
 					],
 					"sid": 873200740915764
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 636516770266585,
+							"parameters": {
+								"object": "Seta"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 365357266841105,
+							"parameters": {
+								"object": "Esteiras",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta",
+							"sid": 404147450596475
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta2",
+							"sid": 581211068379874
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta3",
+							"sid": 219372774615732
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta4",
+							"sid": 388828494308564
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 490901603166966,
+							"parameters": {
+								"frame-number": "6"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 529626176116012,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 965531339395978,
+							"parameters": {
+								"variable": "direçãoesteira"
+							}
+						}
+					],
+					"sid": 855147559352290
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 812547899794030,
+							"parameters": {
+								"object": "Seta2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 270623972612642,
+							"parameters": {
+								"object": "Esteiras",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta",
+							"sid": 600397410003053
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta2",
+							"sid": 187483748629099
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta3",
+							"sid": 860947557584599
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta4",
+							"sid": 876806283236973
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 467716795040492,
+							"parameters": {
+								"frame-number": "4"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 147650640462000,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 722700665854281,
+							"parameters": {
+								"variable": "direçãoesteira"
+							}
+						}
+					],
+					"sid": 152994539165496
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 264414280513068,
+							"parameters": {
+								"object": "Seta3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 493489730361902,
+							"parameters": {
+								"object": "Esteiras",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta",
+							"sid": 278867518912208
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta2",
+							"sid": 382137566014298
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta3",
+							"sid": 516035830100039
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta4",
+							"sid": 920905928106049
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 184006473808870,
+							"parameters": {
+								"frame-number": "7"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 381522756491839,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 608551013647958,
+							"parameters": {
+								"variable": "direçãoesteira"
+							}
+						}
+					],
+					"sid": 654795979620452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 439362614561371,
+							"parameters": {
+								"object": "Seta4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Guia",
+							"sid": 642823961633458,
+							"parameters": {
+								"object": "Esteiras",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta",
+							"sid": 686157897681127
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta2",
+							"sid": 290358586039893
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta3",
+							"sid": 716095209227378
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Seta4",
+							"sid": 703472105445729
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 678089658773945,
+							"parameters": {
+								"frame-number": "5"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 382281828190803,
+							"parameters": {
+								"variable": "Seleção"
+							}
+						},
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 737261280836353,
+							"parameters": {
+								"variable": "direçãoesteira"
+							}
+						}
+					],
+					"sid": 795927397812772
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "recurso",
+					"sid": 665594672207490,
+					"parameters": {
+						"object": "Esteiras"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 751394243293161,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 557102148657451,
+							"parameters": {
+								"comparison": 0,
+								"number": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "recurso",
+							"sid": 300171243042366,
+							"parameters": {
+								"x": "recurso.X+4"
+							}
+						}
+					],
+					"sid": 860088172265434
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 863678691121497,
+							"parameters": {
+								"comparison": 0,
+								"number": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "recurso",
+							"sid": 530542032930265,
+							"parameters": {
+								"y": "recurso.Y+4"
+							}
+						}
+					],
+					"sid": 739361909540637
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 970353159672545,
+							"parameters": {
+								"comparison": 0,
+								"number": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "recurso",
+							"sid": 619985929532534,
+							"parameters": {
+								"x": "recurso.X-4"
+							}
+						}
+					],
+					"sid": 338793843915314
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Esteiras",
+							"sid": 123570990535976,
+							"parameters": {
+								"comparison": 0,
+								"number": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "recurso",
+							"sid": 483439697735607,
+							"parameters": {
+								"y": "recurso.Y-4"
+							}
+						}
+					],
+					"sid": 373714009132759
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "sacola_plastica",
+					"sid": 288566745834267,
+					"parameters": {
+						"object": "maquina1_frente"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "maquina1_frente",
+					"sid": 163032867866490,
+					"parameters": {
+						"object": "papel",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "sacola_plastica",
+					"sid": 727392190288015
+				}
+			],
+			"sid": 692847742305016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 587935404525293,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-pinned",
+					"objectClass": "recurso",
+					"sid": 926161988683514,
+					"behaviorType": "Atrelar"
+				}
+			],
+			"actions": [
+				{
+					"id": "unpin",
+					"objectClass": "recurso",
+					"sid": 730498356939555,
+					"behaviorType": "Atrelar"
+				}
+			],
+			"sid": 287955615149961
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 706161096540595,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite8",
+					"sid": 388478263591443,
+					"parameters": {
+						"object": "recurso"
+					}
+				},
+				{
+					"id": "is-pinned",
+					"objectClass": "recurso",
+					"sid": 186960289133967,
+					"behaviorType": "Atrelar",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "recurso",
+					"sid": 391652461637440,
+					"behaviorType": "Atrelar",
+					"parameters": {
+						"pin-to": "Sprite8",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 248699052664728
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 464623757638791,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite8",
+					"sid": 760048879908145,
+					"parameters": {
+						"animation": "\"down\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 301641312980154,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-pinned",
+							"objectClass": "recurso",
+							"sid": 656670223817161,
+							"behaviorType": "Atrelar"
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "recurso",
+							"sid": 156415925102281,
+							"behaviorType": "Atrelar",
+							"parameters": {
+								"pin-to": "Sprite8",
+								"image-point": "2",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 410120798325664
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 256327043964950,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite8",
+					"sid": 139433873522580,
+					"parameters": {
+						"animation": "\"side\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite8",
+					"sid": 641872769965299,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 739461879773990,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-pinned",
+							"objectClass": "recurso",
+							"sid": 589873126588044,
+							"behaviorType": "Atrelar"
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "recurso",
+							"sid": 334905363309353,
+							"behaviorType": "Atrelar",
+							"parameters": {
+								"pin-to": "Sprite8",
+								"image-point": "3",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 995188234471798
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 380562623982652,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite8",
+					"sid": 853622179251374,
+					"parameters": {
+						"animation": "\"side\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite8",
+					"sid": 293928622553279,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 219271732825254,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-pinned",
+							"objectClass": "recurso",
+							"sid": 384376446014839,
+							"behaviorType": "Atrelar"
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "recurso",
+							"sid": 549898240011125,
+							"behaviorType": "Atrelar",
+							"parameters": {
+								"pin-to": "Sprite8",
+								"image-point": "3",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 120963363739636
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 305188117796453,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite8",
+					"sid": 237648516748800,
+					"parameters": {
+						"animation": "\"up\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 198883526594381,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-pinned",
+							"objectClass": "recurso",
+							"sid": 657283624231448,
+							"behaviorType": "Atrelar"
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "recurso",
+							"sid": 393892067174871,
+							"behaviorType": "Atrelar",
+							"parameters": {
+								"pin-to": "Sprite8",
+								"image-point": "1",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 856614733509597
 				}
 			]
 		}

@@ -1,0 +1,18 @@
+{
+	"name": "recurso",
+	"plugin-id": "Sprite",
+	"sid": 986231452690126,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Atrelar",
+			"sid": 340200043817355
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"sacola_plastica",
+		"papel"
+	]
+}
