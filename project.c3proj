@@ -50,15 +50,22 @@
 		},
 		{
 			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direções",
+			"id": "Pin",
+			"name": "Atrelar",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Atrelar",
+			"id": "TileMovement",
+			"name": "Movimento em grid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restrito ao layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -111,10 +118,12 @@
 			"Mosaico28",
 			"Sprite7",
 			"PlanoDeFundoEmBlocos",
-			"Sprite8",
-			"Sprite9",
-			"Sprite11",
-			"Sprite12"
+			"Seta2",
+			"Seta3",
+			"Seta4",
+			"sacola_plastica",
+			"papel",
+			"Sprite8"
 		],
 		"subfolders": [
 			{
@@ -142,19 +151,6 @@
 				],
 				"subfolders": [],
 				"name": "maquinas"
-			},
-			{
-				"items": [
-					"arvoresclip2",
-					"arvoresclip3",
-					"arvoresclip4",
-					"brush",
-					"Sprite10",
-					"pedras2",
-					"pedras"
-				],
-				"subfolders": [],
-				"name": "Arvores"
 			}
 		]
 	},
@@ -162,7 +158,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"icone"
+			"icone",
+			"recurso"
 		],
 		"subfolders": []
 	},
